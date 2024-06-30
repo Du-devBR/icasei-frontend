@@ -1,5 +1,3 @@
 FROM nginx:alpine
-
-COPY . /usr/share/nginx/html/frontend-mf_videos
-
-EXPOSE 80
+COPY index.html /usr/share/nginx/html/index.html
+COPY nginx.conf /etc/nginx/nginx.conf
