@@ -1,4 +1,3 @@
-import { baseUrl } from "./util/config";
 
 function handleMicrofrontend(event: Event, microFrontend: string) {
   event.preventDefault();
@@ -8,9 +7,9 @@ function handleMicrofrontend(event: Event, microFrontend: string) {
 
     let iframeSrc = '';
     if (microFrontend === 'videos') {
-      iframeSrc = `${baseUrl}/videos`;
+      iframeSrc = `http://localhost/videos`;
     } else if (microFrontend === 'favorites') {
-      iframeSrc = `${baseUrl}/favoritos`;
+      iframeSrc = `http://localhost/favoritos`;
     }
 
     const iframe = document.createElement('iframe');
